@@ -1,2 +1,2 @@
-#### Drew Farrar
-## Composer | Guitarist | Educator
+# Drew Farrar
+### Composer | Guitarist | Educator
