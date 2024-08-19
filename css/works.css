@@ -63,7 +63,7 @@ audio {
         grid-template-rows: 50vw 50vw;
         align-content: center;
         align-items: center;
-        row-gap: 100vh;
+        row-gap: 50vh;
         
     }
 }
