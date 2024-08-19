@@ -17,9 +17,10 @@ class HamMenu extends HTMLElement {
         this.innerHTML =`
 <div class="off-screen-menu">
       <ul>
-        <li><a href="index.html">home</a></li>
-        <li><a href="about.html">about</a></li>
-        <li><a href="contact.html">contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="works.html">Works</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
 

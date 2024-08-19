@@ -1,8 +1,14 @@
 body {
     font-family: system-ui;
+    font-size: large;
     
 }
 
+@media (max-width: 600px) {
+    img {
+      width: 100%;
+    }
+  }
 
 .container{
     display: flex;
