@@ -1,3 +1,15 @@
+
+.header_flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    align-self: center;
+    padding-left: 10vw;
+}
+
 .my_header {
     
     margin: auto;

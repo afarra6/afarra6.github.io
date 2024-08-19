@@ -1,0 +1,19 @@
+.main_container{
+    animation: transitionIn 750ms;
+}
+
+
+
+@keyframes transitionIn {
+    from {
+        opacity: 0.1;
+        transform: rotateX(-10deg);
+        transform: translateY(+30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+        transform: translateY(0px);
+    }
+}

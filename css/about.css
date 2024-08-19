@@ -1,0 +1,21 @@
+body {
+    font-family: system-ui;
+    overflow: hidden;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+   }
+
+
+
+.bio{
+    width: 50%;
+    text-align: justify;
+    float: left;
+}
