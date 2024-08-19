@@ -11,11 +11,13 @@ audio {
     position: relative;
 }
 
+@media screen and (orientation:landscape) {
 .flex_layout {
     display: inline-grid;
     grid-template-columns: 50vw 50vw;
     align-content: center;
     align-items: center;
+}
 }
 
 .flex_layout audio{
