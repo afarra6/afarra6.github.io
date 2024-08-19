@@ -29,7 +29,8 @@ audio {
 }
 
 .audio_block {
-    display: none
+    display: none;
+    padding-top: 10vh;
 }
 
 .works_table {
@@ -55,7 +56,10 @@ audio {
 
 @media screen and (orientation:portrait) {
     .flex_layout {
+        display: inline-grid;
         grid-template-columns: 100vw;
         grid-template-rows: 50vw 50vw;
+        align-content: center;
+        align-items: center;
     }
 }
