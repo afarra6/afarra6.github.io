@@ -25,7 +25,7 @@ body {
 .change{
     color: white;
     margin: auto;
-    width: 80%;
+    width: 100%;
     padding-left: 0%;
     word-spacing: 30px;
 }
@@ -38,9 +38,11 @@ body {
 h1{
     padding-top: 10%;
     padding-right: 10%;
+    width: 100%
 }
 h2{
     padding-right: 10%;
+    width: 100%
 }
 
 
