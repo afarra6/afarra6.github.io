@@ -12,5 +12,29 @@ class MyHeader extends HTMLElement {
     }
 }
 
+class HamMenu extends HTMLElement {
+    connectedCallback(){
+        this.innerHTML =`
+<div class="off-screen-menu">
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </div>
+
+    <nav>
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    `
+    }
+}
+
 
 customElements.define("my-header", MyHeader)
+customElements.define("ham-menu", HamMenu)
