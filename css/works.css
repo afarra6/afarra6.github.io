@@ -6,6 +6,11 @@ h2 {
     cursor: pointer;
 }
 
+audio {
+    z-index: -1;
+    position: relative;
+}
+
 .flex_layout {
     display: inline-grid;
     grid-template-columns: 100% 100%;
