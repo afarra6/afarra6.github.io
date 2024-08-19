@@ -1,0 +1,13 @@
+.my_header {
+    
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    word-spacing: 30px;
+}
+
+.header_link {
+    color: black;
+    text-decoration-line: none;
+    text-align: center;
+}

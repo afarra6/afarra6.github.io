@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: system-ui;
+}
+
+.background{
+    background-color: white;
+    background-image: url("../Images/portrait.jpg");
+    color: white;
+    background-size: 100%;
+    background-position: 20% 20%;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-left: 300px;
+    padding-bottom: 700px;
+    text-align: right;
+    margin: 0px;
+}
+
+.change{
+    color: white;
+    margin: auto;
+    width: 80%;
+    padding-left: 0%;
+    word-spacing: 30px;
+}
+
+.header_change{
+    color: white;
+    text-decoration-line: none;
+    text-align: center;
+}
+h1{
+    padding-right: 10%;
+}
+h2{
+    padding-right: 10%;
+}
