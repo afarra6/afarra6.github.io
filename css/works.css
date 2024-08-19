@@ -1,0 +1,46 @@
+body {
+    padding-left: 5%;
+}
+
+h2 {
+    cursor: pointer;
+}
+
+.flex_layout {
+    display: inline-grid;
+    grid-template-columns: 100% 100%;
+    align-content: center;
+    align-items: center;
+}
+
+.flex_layout audio{
+    align-items: center;
+    padding-right: 30px;
+}
+.selectable {
+    cursor: pointer;
+}
+
+.audio_block {
+    display: none
+}
+
+.works_table {
+    transition: 0.3s ease;
+    width: 40vw;
+    display: none;
+}
+
+
+.works_table th{
+    text-align: left;
+    background-color: hsla(0, 0%, 50%, 0.548);
+    cursor: pointer;
+}
+
+
+.works_table td{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/transitions.css">
     <link rel="stylesheet" href="css/hammen.css">
+    <link rel="stylesheet" href="css/works.css">
 
 </head>
 
@@ -15,16 +16,313 @@
     <ham-menu></ham-menu>
 
   <main class="main_container">
-      <h1>Works</h1>
-      <h2>My works</h2> 
-      <iframe width="420" height="315"
-src="https://drive.google.com/file/d/1Vsgmp4mJ2ppgA_uJykA6e-EWmXgHryZX/view?usp=sharing">
-</iframe>
+
+    <div class="flex_layout">
+
+        <div>
+      <h2 onclick="displayTable(0)">Chamber</h2> 
+
+      <table id="chamberTable" class="works_table">
+        <tr>
+          <th onclick="sortTable(0, 0)">Title</th>
+          <th onclick="sortTable(1, 0)">Instrumentation</th>
+          <th onclick="sortTable(2, 0)">Duration</th>
+          <th onclick="sortTable(3, 0)">Year</th>
+        </tr>
+        <tr>
+            <td class="selectable" onclick="chooseAudio('Kauaʻi ʻōʻō', 'audio/kauai-ambi-stereo.mp3')"><b>Kauaʻi ʻōʻō</b></td>
+            <td>pierrot + viola, percussion (ratchet, bass drum)</td>
+            <td>11</td>
+            <td>2023</td>
+        </tr>
+        <tr>
+          <td>Mask Piece</td>
+          <td>flute, alto saxophone, french horn, violin, classical guitar</td>
+          <td>5</td>
+          <td>2021</td>
+        </tr>
+        <tr>
+          <td>Bending through dense thicket</td>
+          <td>clarinet, bassoon, french horn, electric guitar</td>
+          <td>7</td>
+          <td>2022</td>
+        </tr>
+        <tr>
+            <td>winter petals</td>
+            <td>brass quintet</td>
+            <td>7</td>
+            <td>2022</td>
+        </tr>
+        <tr>
+            <td>different-tongues</td>
+            <td>string quartet</td>
+            <td>7</td>
+            <td>2024</td>
+        </tr>
+        <tr>
+            <td>I listen with my hands</td>
+            <td>flute, clarinet, baritone saxophone, percussion, violin, viola, cello, conductor</td>
+            <td>8</td>
+            <td>2019</td>
+        </tr>
+        <tr>
+            <td>Tarot</td>
+            <td>variable, one deck of playing cards</td>
+            <td></td>
+            <td>2021</td>
+        </tr>
+      </table>
+
+
+      <h2 onclick="displayTable(1)">Solo/Duo</h2> 
+
+      <table id="soloTable" class="works_table">
+        <tr>
+            <th onclick="sortTable(0, 1)">Title</th>
+          <th onclick="sortTable(1, 1)">Instrumentation</th>
+          <th onclick="sortTable(2, 1)">Duration</th>
+          <th onclick="sortTable(3, 1)">Year</th>
+
+        </tr>
+        <tr>
+            <td class="selectable" onclick="chooseAudio('Three Irreconcilable Offerings', 'audio/ThreeOfferings.mp3')"><b>Three irreconcilable offerings</b></td>
+            <td>classical guitar</td>
+            <td>9</td>
+            <td>2020</td>
+        </tr>
+        <tr>
+            <td>A letter from Eyam</td>
+            <td>flute</td>
+            <td>7</td>
+            <td>2020</td>
+        </tr>
+        <tr>
+            <td>A Midwife's Spell</td>
+            <td>viola</td>
+            <td>2</td>
+            <td>2021</td>
+        </tr>
+        <tr>
+            <td>Flint and rosewood embers</td>
+            <td>bass clarinet</td>
+            <td>2</td>
+            <td>2022</td>
+        </tr>
+        <tr>
+            <td>the moon shows me my own form</td>
+            <td>soprano, double bass</td>
+            <td>7</td>
+            <td>2023</td>
+        </tr>
+        <tr>
+            <td>Cathy Mitchell stops shoulder pain with her Great Looking Hair</td>
+            <td>viola, alto saxophone</td>
+            <td>7</td>
+            <td>2020</td>
+        </tr>
+      </table>
+
+      <h2 onclick="displayTable(2)">Large Ensemble</h2> 
+
+      <table id="largeTable" class="works_table">
+        <tr>
+            <th onclick="sortTable(0, 2)">Title</th>
+          <th onclick="sortTable(1, 2)">Instrumentation</th>
+          <th onclick="sortTable(2, 2)">Duration</th>
+          <th onclick="sortTable(3, 2)">Year</th>
+
+        </tr>
+        <tr>
+            <td>cloud mirrors</td>
+            <td>wind band</td>
+            <td>5</td>
+            <td>2023</td>
+        </tr>
+        <tr>
+            <td>Syzygy</td>
+            <td>chamber orchestra</td>
+            <td>5</td>
+            <td>2018</td>
+        </tr>
+
+    </table>
+
+    <h2 onclick="displayTable(3)">Installations</h2> 
+
+      <table id="installTable" class="works_table">
+        <tr>
+            <th onclick="sortTable(0, 3)">Title</th>
+          <th onclick="sortTable(1, 3)">Instrumentation</th>
+          <th onclick="sortTable(2, 3)">Duration</th>
+          <th onclick="sortTable(3, 3)">Year</th>
+
+        </tr>
+        <tr>
+            <td>Only footprints</td>
+            <td>2-8 channel audio, interactive video</td>
+            <td>indeterminate</td>
+            <td>2023</td>
+        </tr>
+        <tr>
+            <td>Jellyfish</td>
+            <td>2 channel audio, interactive video</td>
+            <td>indeterminate</td>
+            <td>2022</td>
+        </tr>
+
+    </table>
+
+    <h2 onclick="displayTable(4)">With Electronics</h2> 
+
+      <table id="elecTable" class="works_table">
+        <tr>
+            <th onclick="sortTable(0, 4)">Title</th>
+          <th onclick="sortTable(1, 4)">Instrumentation</th>
+          <th onclick="sortTable(2, 4)">Duration</th>
+          <th onclick="sortTable(3, 4)">Year</th>
+
+        </tr>
+        <tr>
+            <td>Ouija</td>
+            <td>2 violas, 2-channel audio, 2 contact microphones</td>
+            <td>10</td>
+            <td>2024</td>
+        </tr>
+        <tr>
+            <td>... but this is so cruel</td>
+            <td>viola, 2-channel audio, contact microphone</td>
+            <td>6</td>
+            <td>2022</td>
+        </tr>
+        <tr>
+            <td>We walk. But to where?</td>
+            <td>variable, live interactive video</td>
+            <td>10</td>
+            <td>2019</td>
+        </tr>
+    </table>
+    </div>
+
+
+    <div class="audio_block" id="audio block">
+    <h3 id="audio title">Title Here</h3>
+    <audio id="audio player" controls>
+        <source id="audio source" src="audio/kauai-ambi-stereo.mp3" type="audio/wav">
+    </audio> 
+    </div>
+
+
+</div>
 
   </main>
   <script src="index.js"></script>
   <script src="components.js"></script>
   <script src="hammen.js"></script>
+
+
+
+
+
+  <script>
+    function sortTable(n, t) {
+      var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+      table = document.getElementById(["chamberTable", "soloTable", "largeTable", "installTable", "elecTable"][t]);
+      switching = true;
+      // Set the sorting direction to ascending:
+      dir = "asc";
+      /* Make a loop that will continue until
+      no switching has been done: */
+      while (switching) {
+        // Start by saying: no switching is done:
+        switching = false;
+        rows = table.rows;
+        /* Loop through all table rows (except the
+        first, which contains table headers): */
+        for (i = 1; i < (rows.length - 1); i++) {
+          // Start by saying there should be no switching:
+          shouldSwitch = false;
+          /* Get the two elements you want to compare,
+          one from current row and one from the next: */
+          x = rows[i].getElementsByTagName("TD")[n];
+          y = rows[i + 1].getElementsByTagName("TD")[n];
+          /* Check if the two rows should switch place,
+          based on the direction, asc or desc: */
+          if (dir == "asc") {
+            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+              // If so, mark as a switch and break the loop:
+              shouldSwitch = true;
+              break;
+            }
+          } else if (dir == "desc") {
+            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+              // If so, mark as a switch and break the loop:
+              shouldSwitch = true;
+              break;
+            }
+          }
+        }
+        if (shouldSwitch) {
+          /* If a switch has been marked, make the switch
+          and mark that a switch has been done: */
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+          // Each time a switch is done, increase this count by 1:
+          switchcount ++;
+        } else {
+          /* If no switching has been done AND the direction is "asc",
+          set the direction to "desc" and run the while loop again. */
+          if (switchcount == 0 && dir == "asc") {
+            dir = "desc";
+            switching = true;
+          }
+        }
+      }
+    }
+    </script>
+<script>
+function displayTable(tableIndex) {
+    var arrLength = ["chamberTable", "soloTable", "largeTable", "installTable", "elecTable"].length;
+    var x = document.getElementById(["chamberTable", "soloTable", "largeTable", "installTable", "elecTable"][tableIndex]);
+    for(var i = 0; i < arrLength; i++){
+    
+    if(i === tableIndex){
+    if (x.style.display != "block") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+} else {
+    document.getElementById(["chamberTable", "soloTable", "largeTable", "installTable", "elecTable"][i]).style.display = "none";
+}
+
+    } 
+     
+  
+    
+}
+  
+</script>
+
+
+<script>
+    function chooseAudio(name, file){
+        var elem = document.getElementById("audio block")
+        var piece = document.getElementById("audio title")
+        var player = document.getElementById("audio player")
+        var aSource = document.getElementById("audio source")
+            elem.style.display = "block";
+        
+        piece.textContent = name
+        player.pause()
+        
+        player.setAttribute('src', file)
+    
+        player.load();
+
+    }
+</script>
+
+
 </body>
 
 
