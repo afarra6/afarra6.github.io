@@ -13,10 +13,10 @@ body {
     background-size: 100vw;
     background-position: 40% 40%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: local;
     padding-top: 0;
     padding-left: 300px;
-    padding-bottom: 700px;
+    padding-bottom: 100vh;
     text-align: right;
     margin: 0px;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
