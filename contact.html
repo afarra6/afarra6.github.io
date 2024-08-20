@@ -9,16 +9,43 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/transitions.css">
+    <link rel="stylesheet" href="css/hammen.css">
+    <link rel="stylesheet" href="css/contact.css">
+
 </head>
 
 <body>
-   <my-header></my-header>
+
+   <ham-menu></ham-menu>
     <main class="main_container">
-        <h1>Contact me.</h1>
+        <!-- <h1>Contact me.</h1> -->
     </main>
     
-    <script src="components.js"></script>
+    
+
+    <div class="container">
+        <form action="action_page.php" method="POST">
+      
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name..">
+
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Your email..">
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Email subject..">
+      
+      
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+
+
 </body>
-
-
+<script src="hammen.js"></script>
+<script src="components.js"></script>
 </html>

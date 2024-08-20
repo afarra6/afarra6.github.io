@@ -37,6 +37,7 @@ a:hover {
     text-align: center;
     font-size: 3rem;
     transition: .3s ease;
+    z-index: 10;
 }
 .off-screen-menu.active {
     right: 0;
@@ -59,6 +60,7 @@ nav {
     width: 40px;
     margin-left: auto;
     position: relative;
+    z-index: 11;
 }
 .ham-menu span {
     height: 5px;

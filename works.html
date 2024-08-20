@@ -54,9 +54,9 @@
             <td>2022</td>
         </tr>
         <tr>
-            <td>different-tongues</td>
+            <td class="selectable" onclick="chooseAudio('different-tongues', 'audio/different_tongues.mp3')">different-tongues</td>
             <td>string quartet</td>
-            <td>7</td>
+            <td>8</td>
             <td>2024</td>
         </tr>
         <tr>
@@ -109,13 +109,13 @@
             <td>2022</td>
         </tr>
         <tr>
-            <td>the moon shows me my own form</td>
+            <td class="selectable" onclick="chooseVideo('the moon shows me my own form', `https://drive.google.com/file/d/1Vsgmp4mJ2ppgA_uJykA6e-EWmXgHryZX/preview`)">the moon shows me my own form</td>
             <td>soprano, double bass</td>
             <td>7</td>
             <td>2023</td>
         </tr>
         <tr>
-            <td>Cathy Mitchell stops shoulder pain with her Great Looking Hair</td>
+            <td class="selectable" onclick="chooseVideo('Cathy Mitchell stops shoulder pain with her Great Looking Hair', `https://www.youtube.com/embed/hKHnHLzC9Fk?si=gmIoff4MmmWHywbx`)">Cathy Mitchell stops shoulder pain with her Great Looking Hair</td>
             <td>viola, alto saxophone</td>
             <td>7</td>
             <td>2020</td>
@@ -158,7 +158,7 @@
 
         </tr>
         <tr>
-            <td>Only footprints</td>
+            <td class="selectable" onclick="chooseVideo('Only footprints', `https://www.youtube.com/embed/fxrIaVuKMXk?si=WwiyPeOsAZjSF3yc`)">Only footprints</td>
             <td>2-8 channel audio, interactive video</td>
             <td>indeterminate</td>
             <td>2023</td>
@@ -183,7 +183,7 @@
 
         </tr>
         <tr>
-            <td>Ouija</td>
+            <td class="selectable" onclick="chooseVideo('Ouija', `https://www.youtube.com/embed/I8JDVzXxSIc?si=q6gII7jQ28cwt9x9`)">Ouija</td>
             <td>2 violas, 2-channel audio, 2 contact microphones</td>
             <td>10</td>
             <td>2024</td>
@@ -209,6 +209,9 @@
     <audio id="audio player" controls>
         <source id="audio source" src="audio/kauai-ambi-stereo.mp3" type="audio/wav">
     </audio> 
+    <iframe id="video player" width="560" height="315" allow="autoplay"></iframe>
+    <!-- add description later. maybe it can just link to a google doc? -->
+    <p id="description"></p>
     </div>
 
 
@@ -310,9 +313,13 @@ function displayTable(tableIndex) {
         var piece = document.getElementById("audio title")
         var player = document.getElementById("audio player")
         var aSource = document.getElementById("audio source")
+        var videoPlayer = document.getElementById("video player")
             elem.style.display = "block";
         
+        player.style.display = "block"
+        videoPlayer.style.display = "none";
         piece.textContent = name
+        videoPlayer.setAttribute('src', "")
         player.pause()
         player.scrollIntoView()
         
@@ -321,6 +328,30 @@ function displayTable(tableIndex) {
         player.load();
 
     }
+</script>
+
+
+
+<script>
+  function chooseVideo(name, file){
+    var elem = document.getElementById("audio block")
+        var piece = document.getElementById("audio title")
+        var player = document.getElementById("audio player")
+        var aSource = document.getElementById("audio source")
+        var videoPlayer = document.getElementById("video player")
+            elem.style.display = "block";
+        
+        videoPlayer.style.display = "block";
+        videoPlayer.setAttribute('src', "")
+        player.style.display = "none"
+        piece.textContent = name
+        player.pause()
+        videoPlayer.scrollIntoView()
+        
+        videoPlayer.setAttribute('src', file)
+    
+        videoPlayer.load();
+  }
 </script>
 
 
