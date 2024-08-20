@@ -1,4 +1,4 @@
-<html>
+
 <?php 
 if(isset($_POST['submit'])){
     $to = "drewmfarrar@gmail.com"; // this is your Email address
@@ -18,4 +18,3 @@ if(isset($_POST['submit'])){
     // You cannot use header and echo together. It's one or the other.
     }
 ?>
-</html>
