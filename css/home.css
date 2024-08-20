@@ -9,7 +9,7 @@ body {
 .background{
     background-color: black;
     background-image: url("../Images/portrait.jpg");
-    color: black;
+    color: white;
     background-size: 100vw;
     background-position: 40% 40%;
     background-repeat: no-repeat;
