@@ -59,6 +59,7 @@ nav {
     height: 50px;
     width: 40px;
     margin-left: auto;
+    top: 75px;
     position: relative;
     z-index: 11;
 }
