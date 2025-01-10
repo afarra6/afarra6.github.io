@@ -6,11 +6,22 @@ body {
     align-items: end;
 }
 
+@media screen and (orientation: landscape) {
+    .background{
+     background-size: 100vw;
+    } 
+ }
+
+ @media  and (orientation: portrait) {
+    .background{
+        background-size: 100vh;
+    }
+ }
 .background{
     background-color: black;
     background-image: url("../Images/portrait.jpg");
     color: white;
-    background-size: 100vw;
+    /* background-size: 100vw; */
     background-position: 40% 40%;
     background-repeat: no-repeat;
     background-attachment: local;
