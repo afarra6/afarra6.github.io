@@ -12,7 +12,7 @@ body {
     } 
  }
 
- @media  and (orientation: portrait) {
+ @media screen and (orientation: portrait) {
     .background{
         background-size: 100vh;
     }
