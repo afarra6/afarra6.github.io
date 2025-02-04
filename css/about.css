@@ -1,6 +1,7 @@
 body {
     font-family: system-ui;
     font-size: large;
+    background-image: linear-gradient(rgba(110, 109, 117, 0.403), white)
     
 }
 
@@ -35,3 +36,4 @@ img {
   color: black;
   text-decoration: underline;
 }
+

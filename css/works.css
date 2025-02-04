@@ -1,13 +1,19 @@
 html {
     scroll-behavior: smooth;
+    
 }
 
 body {
     padding-left: 5%;
+    
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(179, 182, 196, 0.48),white);
+    size: 3000vw 100vh;
 }
 
 h2 {
     cursor: pointer;
+    
 }
 
 audio {
@@ -79,3 +85,4 @@ audio {
         
     }
 }
+

@@ -59,14 +59,15 @@ nav {
     height: 50px;
     width: 40px;
     margin-left: auto;
-    top: 75px;
-    position: relative;
+    top: 15px;
+    right: 20px;
+    position: fixed;
     z-index: 11;
 }
 .ham-menu span {
     height: 5px;
     width: 100%;
-    background-color: #6F86FF;
+    background-color: #91a4a4;
     border-radius: 25px;
     position: absolute;
     left: 50%;
