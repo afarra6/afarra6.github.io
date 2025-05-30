@@ -13,3 +13,5 @@ In 2020 Farrar co-founded New Music Mosaic where he currently serves as Director
 Farrar received his M.M. in composition at the University of Illinois at Urbana-Champaign, where he studied with Dr.s Rick Taube, Erik Lund, Kerrith Livengood, and Carlos Carrillo. He received his M.M. in Guitar Performance from the University of Illinois at Urbana-Champaign where he studied with Dr. Guido Sanchez-Portuguez. He is currently pursuing a Ph.D. in Composition at Louisiana State University where he has studied with Dr.s Mara Gibson, Jesse Allison, Christopher Trapani, and D.J. Sparr.
 
 Current research interests include otherness, guitar effects pedals, spectralism, computer assisted composition, and interactive sound installations.
+
+Here's some changes.
