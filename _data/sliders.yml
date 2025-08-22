@@ -1,0 +1,20 @@
+# example slider
+- selector: example_slider
+  captions: false
+  images:
+    - src: /assets/2022-Headshot.jpg
+      alt: image one
+    - src: /assets/Backsplash.png
+      alt: image two
+    - src: /assets/DrewGuitar.png
+      alt: image three
+  settings:
+    height: 400
+    initialHeight: 100%
+    maxHeight: 100%
+    interval: 4000
+    transitionDuration: 50
+    effect: "fade"
+    disableNav: true
+    keyboardNav: false
+   

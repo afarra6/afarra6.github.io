@@ -244,12 +244,20 @@
 </head>
 
 <body>
-
+<!-- Jekyll Ideal Image Slider Include -->
+<!-- https://github.com/jekylltools/jekyll-ideal-image-slider-include -->
+<!-- v1.8 -->
+<div id="example_slider">
+  <img data-src="" data-src-2x="" src="/assets/2022-Headshot.jpg" title="" alt="image one" />
+  <img data-src="" data-src-2x="" src="/assets/Backsplash.png" title="" alt="image two" />
+  <img data-src="" data-src-2x="" src="/assets/DrewGuitar.png" title="" alt="image three" />
+  </div>
 
 
 
 <div class="hero" max-width="100%">
-    <img class="feature-img" src="./assets/Backsplash.png" />
+    <!-- <img class="feature-img" src="./assets/Backsplash.png" /> -->
+    
 </div>
 
 
@@ -266,6 +274,34 @@
 
 
 
+<!-- Jekyll Ideal Image Slider Include -->
+<!-- https://github.com/jekylltools/jekyll-ideal-image-slider-include -->
+<!-- v1.8 -->
+<link rel="stylesheet" href="/assets/css/slider/ideal-image-slider.css">
+<link rel="stylesheet" href="/assets/css/slider/themes/default.css">
+<!-- Jekyll Ideal Image Slider Include -->
+<!-- https://github.com/jekylltools/jekyll-ideal-image-slider-include -->
+<!-- v1.8 -->
+  <script src="/assets/js/slider/ideal-image-slider.min.js"></script>
+  <script src="/assets/js/slider/iis-bullet-nav.js"></script>
+  <script src="/assets/js/slider/iis-captions.js"></script>
+  <script>
+  var example_slider = new IdealImageSlider.Slider({
+      selector: '#example_slider',
+      height: 400,
+      initialHeight: 100%,
+      maxHeight: 100%,
+      interval: 4000,
+      transitionDuration: 50,
+      effect: fade,
+      disableNav: true,
+      });
+    example_slider.start();
+  var  = new IdealImageSlider.Slider({
+      selector: '#',
+      });
+    .start();
+  </script>
 
   </div>
 </div>
