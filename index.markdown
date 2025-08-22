@@ -5,3 +5,4 @@ excerpt: "Composer :: Guitarist :: Educator"
 ---
 
 
+![HeroImage](assets/Backsplash.png)
