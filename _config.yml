@@ -58,3 +58,7 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+backgroundcolorstring: "#e8dcb8"
+backgroundcolor: #e8dcb8
+paginate: 5

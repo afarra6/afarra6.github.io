@@ -16,9 +16,9 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
-    <link rel="stylesheet" type="text/css" href="assets/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/screen.edited.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/syntax.css" />
+    <link rel="stylesheet" type="text/css" href="assets/built/screen.css" />
+    <link rel="stylesheet" type="text/css" href="assets/built/screen.edited.css" />
+    <link rel="stylesheet" type="text/css" href="assets/built/syntax.css" />
     <!-- highlight.js -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
     <style>.hljs { background: none; }</style>
@@ -138,7 +138,7 @@
 <!-- The main content area -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
-
+        <div><h1>Under Construction, check back for more info soon</h1></div>
         <div class="post-feed">
             <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
             
@@ -150,11 +150,12 @@
     </div>
 </main>
 
-     
-            
 
 
 
+<head>
+<link rel="stylesheet" href="./assets/built/carousel.css">
+</head>
 <div class="carousel__holder">
     <div id="carousel0" class="carousel">
         
@@ -218,11 +219,13 @@
 <style>
 .carousel__holder {
   position: relative;
-  /* margin: 1rem 0 1rem; */
+  margin: 1rem 0 1rem;
   margin-left: 0;
+  top: -10vh;
   max-width: 100%;
-  height: 25%;
-  background-color: #ede2c099;
+  height: 70vh;
+  background-color: ;
+  padding-bottom: 70vh;
   overflow: hidden;
   user-select: none;
   -moz-user-select: none;
@@ -231,7 +234,7 @@
   -o-user-select: none;
 }
 .carousel {
-  height: 25%;
+  height: 100vh;
   width: 100%;
   overflow: hidden;
   text-align: center;
@@ -489,7 +492,7 @@ window.addEventListener('load', function() {
 		const firstImage = carouselHolder.querySelector('img');
 		if (firstImage) {
 			let aspectRatio = firstImage.naturalHeight / firstImage.naturalWidth * 100;
-			carouselHolder.style.paddingBottom = `${aspectRatio}%`;
+			carouselHolder.style.paddingBottom = 100%`;
 		}
 	});
 });
@@ -498,6 +501,12 @@ window.addEventListener('load', function() {
 <!-- Add scripts/style for Lightbox2 -->
 <!-- <script src="/assets/js/lightbox-plus-jquery.js"></script>
 <link rel="stylesheet" href="/assets/css/lightbox.css"> -->
+
+
+
+
+     
+            
         
         <!-- Previous/next page links - displayed on every page -->
         

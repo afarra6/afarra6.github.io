@@ -1,7 +1,9 @@
 {% assign letterstring = "a,b,c,d,e,f,g,h,i,j,k,l,m,n" %}
 {% assign letters = letterstring | split: ',' %}
 {% assign number = include.number | minus: 1 %}
-
+<head>
+<link rel="stylesheet" href="./assets/built/carousel.css">
+</head>
 <div class="carousel__holder">
     <div id="carousel{{ number }}" class="carousel">
         {% for item in page.carousels[number].images %}
@@ -43,11 +45,13 @@
 <style>
 .carousel__holder {
   position: relative;
-  /* margin: 1rem 0 1rem; */
+  margin: 1rem 0 1rem;
   margin-left: 0;
+  top: -10vh;
   max-width: 100%;
-  height: 25%;
-  background-color: #ede2c099;
+  height: 70vh;
+  background-color: {{ site.background-color }};
+  padding-bottom: 70vh;
   overflow: hidden;
   user-select: none;
   -moz-user-select: none;
@@ -56,7 +60,7 @@
   -o-user-select: none;
 }
 .carousel {
-  height: 25%;
+  height: 100vh;
   width: 100%;
   overflow: hidden;
   text-align: center;
@@ -246,7 +250,7 @@ window.addEventListener('load', function() {
 		const firstImage = carouselHolder.querySelector('img');
 		if (firstImage) {
 			let aspectRatio = firstImage.naturalHeight / firstImage.naturalWidth * 100;
-			carouselHolder.style.paddingBottom = `${aspectRatio}%`;
+			carouselHolder.style.paddingBottom = 100%`;
 		}
 	});
 });
