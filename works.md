@@ -44,7 +44,7 @@ subclass: 'post page'
 </head>
 <div class="table-container">
 
-<button id="chamber-button" style="border:none" onclick="displayTableNew(0);"><u>Chamber</u></button> | <button id="solo-button" style="border:none" onclick="displayTableNew(1);"><u>Solo/Duo</u></button> | <button id="large-button" style="border:none" onclick="displayTableNew(2);"><u>Large Ensemble</u></button> | <button id="install-button" style="border:none" onclick="displayTableNew(3);"><u>Installations</u></button> | <button id="elec-button" style="border:none" onclick="displayTableNew(4);"><u>With Electronics</u></button>
+<button class="start-button" id="chamber-button" style="border:none, background:#fbe19bff" onclick="displayTableNew(0);"><u>Chamber</u></button> | <button id="solo-button" style="border:none" onclick="displayTableNew(1);"><u>Solo/Duo</u></button> | <button id="large-button" style="border:none" onclick="displayTableNew(2);"><u>Large Ensemble</u></button> | <button id="install-button" style="border:none" onclick="displayTableNew(3);"><u>Installations</u></button> | <button id="elec-button" style="border:none" onclick="displayTableNew(4);"><u>With Electronics</u></button>
 
 
 
