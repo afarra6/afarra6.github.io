@@ -7,14 +7,13 @@ logo: true
 class: page-template
 subclass: 'post page'
 ---
-
 <header class="site-header outer">
     <div class="inner">
         <nav class="site-nav">
     <div class="site-nav-left">
         
             
-                <a class="site-nav-logo" href="http://www.drewmfarrar.com">Drew Farrar</a>
+                <a class="site-nav-logo" href="{{site.url}}">Drew Farrar</a>
             
         
         

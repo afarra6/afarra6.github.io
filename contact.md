@@ -13,7 +13,7 @@ subclass: 'post page'
     <div class="site-nav-left">
         
             
-                <a class="site-nav-logo" href="http://localhost:4000">Drew Farrar</a>
+                <a class="site-nav-logo" href="{{site.url}}">Drew Farrar</a>
             
         
         
