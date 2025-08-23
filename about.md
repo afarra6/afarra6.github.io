@@ -16,7 +16,7 @@ Drew Farrar is a composer, guitarist, and educator from St. Louis, Missouri, cur
 
 Farrar also performs regularly as a guitarist with performances at Electric LaTex, Summit for Adventurous Guitar in the Gulf South, CHIMEfest, New Music on the Point, and the 21st Century Guitar Festival. An avid improviser, he has performed with Renee Baker, Adam Shead's Adiaphora Orchestra, the Avant-Gardians and Illinois Improvisors Exchange.
 
-In 2020 Farrar co-founded New Music Mosaic where he currently serves as Director. He also serves as co-host alongside Stephen Caldwell of New Music Mosaic's Mosaic Reviewcast a monthly review podcast. For more information about New Music Mosaic please visit our website!
+In 2020 Farrar co-founded New Music Mosaic where he currently serves as Director. He also serves as co-host alongside Stephen Caldwell of New Music Mosaic's Mosaic Reviewcast a monthly review podcast. For more information about New Music Mosaic please visit our [website](https://nmmosaic.wixsite.com/new-music-mosaic)!
 
 Farrar received his M.M. in composition at the University of Illinois at Urbana-Champaign, where he studied with Dr.s Rick Taube, Erik Lund, Kerrith Livengood, and Carlos Carrillo. He received his M.M. in Guitar Performance from the University of Illinois at Urbana-Champaign where he studied with Dr. Guido Sanchez-Portuguez. He is currently pursuing a Ph.D. in Composition at Louisiana State University where he has studied with Dr.s Mara Gibson, Jesse Allison, Christopher Trapani, and D.J. Sparr.
 

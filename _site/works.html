@@ -35,7 +35,7 @@
     <![endif]-->
     
     <!-- This tag outputs SEO meta+structured data and other important settings -->
-    <meta name="description" content="Composer, Guitarist, Educator" />
+    <meta name="description" content="Composer | Guitarist | Educator" />
     <link rel="shortcut icon" href="http://localhost:4000" type="image/png" />
     <link rel="canonical" href="http://localhost:4000works.html" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -44,13 +44,13 @@
     <meta property="og:site_name" content="Drew Farrar" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Works" />
-    <meta property="og:description" content="Composer, Guitarist, Educator" />
+    <meta property="og:description" content="Composer | Guitarist | Educator" />
     <meta property="og:url" content="http://localhost:4000works.html" />
     <meta property="og:image" content="http://localhost:4000" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Works" />
-    <meta name="twitter:description" content="Composer, Guitarist, Educator" />
+    <meta name="twitter:description" content="Composer | Guitarist | Educator" />
     <meta name="twitter:url" content="http://localhost:4000" />
     <meta name="twitter:image" content="http://localhost:4000" />
     <meta name="twitter:label1" content="Written by" />
@@ -80,7 +80,7 @@
         "@type": "WebPage",
         "@id": "http://localhost:4000works.html"
     },
-    "description": "Composer, Guitarist, Educator"
+    "description": "Composer | Guitarist | Educator"
 }
     </script>
 
@@ -137,7 +137,7 @@
 </head>
 <div class="table-container">
 
-<button style="border:none" onclick="displayTableNew(0);"><u>Chamber</u></button> | <button style="border:none" onclick="displayTableNew(1);"><u>Solo/Duo</u></button> | <button style="border:none" onclick="displayTableNew(2);"><u>Large Ensemble</u></button> | <button style="border:none" onclick="displayTableNew(3);"><u>Installations</u></button> | <button style="border:none" onclick="displayTableNew(4);"><u>With Electronics</u></button>
+<button id="chamber-button" style="border:none" onclick="displayTableNew(0);"><u>Chamber</u></button> | <button id="solo-button" style="border:none" onclick="displayTableNew(1);"><u>Solo/Duo</u></button> | <button id="large-button" style="border:none" onclick="displayTableNew(2);"><u>Large Ensemble</u></button> | <button id="install-button" style="border:none" onclick="displayTableNew(3);"><u>Installations</u></button> | <button id="elec-button" style="border:none" onclick="displayTableNew(4);"><u>With Electronics</u></button>
 
 
 
@@ -185,6 +185,22 @@
     </td><td class="col4">
       2024
     </td><td class="col5">
+      <a href="different-tongues" target="_blank">audio</a>
+    </td></tr>
+
+  
+    
+
+    <tr class="row1">
+<td class="col1">
+      bending through dense thicket
+    </td><td class="col2">
+      clarinet, bassoon, french horn, electric guitar
+    </td><td class="col3">
+      7'
+    </td><td class="col4">
+      2022
+    </td><td class="col5">
       
     </td></tr>
 
@@ -219,6 +235,22 @@
       8
     </td><td class="col4">
       2020 rev. 2024
+    </td><td class="col5">
+      
+    </td></tr>
+
+  
+    
+
+    <tr class="row1">
+<td class="col1">
+      Three irreconcialable offerings
+    </td><td class="col2">
+      classical guitar
+    </td><td class="col3">
+      10
+    </td><td class="col4">
+      2020
     </td><td class="col5">
       
     </td></tr>
@@ -265,6 +297,36 @@
 
 <table id="install" style="display:none">
   
+    
+    <tr data-sort-method="none">
+      
+        <th>Title</th>
+      
+        <th> Description</th>
+      
+        <th> Duration</th>
+      
+        <th> Year</th>
+      
+        <th> Listen</th>
+      
+    </tr>
+    
+
+    <tr class="row1">
+<td class="col1">
+      Only footprints
+    </td><td class="col2">
+      interactive multimedia installation
+    </td><td class="col3">
+      non-fixed
+    </td><td class="col4">
+      2024
+    </td><td class="col5">
+      
+    </td></tr>
+
+  
 </table>
 
 <table id="elec" style="display:none">
@@ -287,15 +349,47 @@
 
     <tr class="row1">
 <td class="col1">
-      test
+      From open lands
     </td><td class="col2">
-      test
+      electric guitar, 8-channel live electronics
     </td><td class="col3">
-      test
+      10min
     </td><td class="col4">
-      test
+      2025
     </td><td class="col5">
-      test
+      
+    </td></tr>
+
+  
+    
+
+    <tr class="row1">
+<td class="col1">
+      Ouija
+    </td><td class="col2">
+      any two high strings (violin/viola) and live electronics
+    </td><td class="col3">
+      10min
+    </td><td class="col4">
+      2024
+    </td><td class="col5">
+      
+    </td></tr>
+
+  
+    
+
+    <tr class="row1">
+<td class="col1">
+      ...but this is so cruel
+    </td><td class="col2">
+      viola and live electronics
+    </td><td class="col3">
+      8min
+    </td><td class="col4">
+      2022
+    </td><td class="col5">
+      
     </td></tr>
 
   
@@ -305,9 +399,11 @@
 
 <script>
 function displayTableNew(tableIndex) {
+  console.log(this)
     var arrLength = ["chamber", "solo", "large", "install", "elec"].length;
     var x = document.getElementById(["chamber", "solo", "large", "install", "elec"][tableIndex]);
     
+    var y = document.getElementById(["chamber-button", "solo-button", "large-button", "install-button", "elec-button"][tableIndex]);
     if(x.style.display === "block"){return}
     for(var i = 0; i < arrLength; i++){
     
@@ -319,9 +415,18 @@ function displayTableNew(tableIndex) {
       x.style.display = "block";
     } else {
       x.style.display = "none";
+      
+    }
+
+    if (y.style.background != '#fff') {
+      y.style.background = '#fbe19bff'
+    } else {
+      
+      y.style.background = '#ffffff'
     }
 } else {
     document.getElementById(["chamber", "solo", "large", "install", "elec"][i]).style.display = "none";
+    document.getElementById(["chamber-button", "solo-button", "large-button", "install-button", "elec-button"][i]).style.background = '#e8dcb8'
 }
 
     } 
@@ -369,7 +474,7 @@ function displayTableNew(tableIndex) {
   margin-left: 0;
   max-width: 100%;
   height: 25%;
-  background-color: rgba(0, 0, 0, 0.907);
+  background-color: #ede2c099;
   overflow: hidden;
   user-select: none;
   -moz-user-select: none;

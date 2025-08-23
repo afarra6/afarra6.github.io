@@ -54,3 +54,12 @@
     margin: auto;
     width: 50%;
   }
+
+  button {
+    cursor: pointer;
+    background: #e8dcb899;
+  }
+
+  button:active {
+    background: #fbfbfb;
+  }

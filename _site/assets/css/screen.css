@@ -29,7 +29,7 @@ production stylesheet in assets/built/screen.css
 @import "global.css";
 
 body {
-    background: #f4f8fb;
+    background: #e8dcb899
 }
 
 .img {
@@ -55,11 +55,13 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background: #e8dcb8
 }
 
 .site-main {
     z-index: 100;
     flex-grow: 1;
+    background: #e8dcb899
 }
 
 /* Full width page blocks */
@@ -536,6 +538,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
 
 .home-template .site-header:after {
     display: none;
+    background: #e8dcb899
 }
 
 
@@ -557,7 +560,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
 .post-template .site-main,
 .page-template .site-main {
     padding-bottom: 4vw;
-    background: #fff;
+    background: #e8dcb8;
 }
 
 .post-full {
@@ -632,7 +635,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
     font-family: Georgia, serif;
     font-size: 2.2rem;
     line-height: 1.6em;
-    background: #fff;
+    background: #e8dcb899;
 }
 
 @media (max-width: 1170px) {
@@ -1878,7 +1881,7 @@ Usage (In Ghost editor):
     padding-top: 20px;
     padding-bottom: 60px;
     color: #fff;
-    background: color(var(--darkgrey) l(-15%));
+    background: black;
 }
 
 .site-footer-content {

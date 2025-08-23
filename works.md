@@ -44,7 +44,7 @@ subclass: 'post page'
 </head>
 <div class="table-container">
 
-<button style="border:none" onclick="displayTableNew(0);"><u>Chamber</u></button> | <button style="border:none" onclick="displayTableNew(1);"><u>Solo/Duo</u></button> | <button style="border:none" onclick="displayTableNew(2);"><u>Large Ensemble</u></button> | <button style="border:none" onclick="displayTableNew(3);"><u>Installations</u></button> | <button style="border:none" onclick="displayTableNew(4);"><u>With Electronics</u></button>
+<button id="chamber-button" style="border:none" onclick="displayTableNew(0);"><u>Chamber</u></button> | <button id="solo-button" style="border:none" onclick="displayTableNew(1);"><u>Solo/Duo</u></button> | <button id="large-button" style="border:none" onclick="displayTableNew(2);"><u>Large Ensemble</u></button> | <button id="install-button" style="border:none" onclick="displayTableNew(3);"><u>Installations</u></button> | <button id="elec-button" style="border:none" onclick="displayTableNew(4);"><u>With Electronics</u></button>
 
 
 
@@ -136,9 +136,11 @@ subclass: 'post page'
 
 <script>
 function displayTableNew(tableIndex) {
+  console.log(this)
     var arrLength = ["chamber", "solo", "large", "install", "elec"].length;
     var x = document.getElementById(["chamber", "solo", "large", "install", "elec"][tableIndex]);
     
+    var y = document.getElementById(["chamber-button", "solo-button", "large-button", "install-button", "elec-button"][tableIndex]);
     if(x.style.display === "block"){return}
     for(var i = 0; i < arrLength; i++){
     
@@ -150,9 +152,18 @@ function displayTableNew(tableIndex) {
       x.style.display = "block";
     } else {
       x.style.display = "none";
+      
+    }
+
+    if (y.style.background != '#fff') {
+      y.style.background = '#fbe19bff'
+    } else {
+      
+      y.style.background = '#ffffff'
     }
 } else {
     document.getElementById(["chamber", "solo", "large", "install", "elec"][i]).style.display = "none";
+    document.getElementById(["chamber-button", "solo-button", "large-button", "install-button", "elec-button"][i]).style.background = '#e8dcb8'
 }
 
     } 
