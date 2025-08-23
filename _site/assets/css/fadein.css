@@ -59,3 +59,7 @@
     animation-duration: 1.5s;
     animation-name: fadeIn;
   }
+
+  .slideshow{
+    left: -50%;
+  }
