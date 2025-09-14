@@ -21,6 +21,7 @@ subclass: 'post page'
     <!-- <li class="nav-home" role="menuitem"><a href="">Home</a></li> -->
     <li class="nav-about" role="menuitem"><a href="./about.html">About</a></li>
     <li class="nav-getting-started" role="menuitem"><a href="./works.html">Works</a></li>
+    <li class="nav-getting-started" role="menuitem"><a href="./blog.html">Writing</a></li>
     <li class="nav-try-ghost" role="menuitem"><a href="./contact.html">Contact</a></li>
 </ul>
         

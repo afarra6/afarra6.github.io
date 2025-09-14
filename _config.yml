@@ -62,3 +62,4 @@ plugins:
 backgroundcolorstring: "#e8dcb8"
 backgroundcolor: #e8dcb8
 paginate: 5
+# cover: /assets/websiteBackground.png

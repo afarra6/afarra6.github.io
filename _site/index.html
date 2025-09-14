@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="assets/css/fadein.css">
-    <link rel="stylesheet" href="assets/css/screen.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/fadein.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/screen.css">
     <!-- Document Settings -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,9 +16,9 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
-    <link rel="stylesheet" type="text/css" href="assets/built/screen.css" />
-    <link rel="stylesheet" type="text/css" href="assets/built/screen.edited.css" />
-    <link rel="stylesheet" type="text/css" href="assets/built/syntax.css" />
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/built/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/built/screen.edited.css" />
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/built/syntax.css" />
     <!-- highlight.js -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
     <style>.hljs { background: none; }</style>
@@ -117,9 +117,11 @@
         
             <ul class="nav" role="menu">
     <!-- <li class="nav-home" role="menuitem"><a href="">Home</a></li> -->
-    <li class="nav-about" role="menuitem"><a href="./about.html">About</a></li>
-    <li class="nav-getting-started" role="menuitem"><a href="./works.html">Works</a></li>
-    <li class="nav-try-ghost" role="menuitem"><a href="./contact.html">Contact</a></li>
+    <li class="nav-about" role="menuitem"><a href="http://localhost:4000/about.html">About</a></li>
+    <li class="nav-getting-started" role="menuitem"><a href="http://localhost:4000/works.html">Works</a></li>
+    <li class="nav-try-ghost" role="menuitem"><a href="http://localhost:4000/blog.html">Writing</a></li>
+    <li class="nav-try-ghost" role="menuitem"><a href="http://localhost:4000/contact.html">Contact</a></li>
+
 </ul>
         
     </div>
@@ -144,13 +146,90 @@
             
 
 
+    <article class="post-card home-template">
+        
+            <a class="post-card-image-link" href="2025/09/13/welcome.html">
+                <div class="post-card-image" style="background-image: url(/assets/2022-Headshot.jpg)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="2025/09/13/welcome.html">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Getting started</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">Welcome</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p>This site is under construction, check back later for more info
+</p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+    <article class="post-card home-template">
+        
+            <a class="post-card-image-link" href="2025/09/13/godot-for-creative-musicians.html">
+                <div class="post-card-image" style="background-image: url(/assets/images/GodotBackground-OnlyFootprints.png)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="2025/09/13/godot-for-creative-musicians.html">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Godot</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">Godot for Creative Musicians</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p>Writing about how to use Godot for installations, OSC controllers, and other things.
+
+</p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
 
         </div>
 
     </div>
 </main>
 
-
+<!-- 
 
 
 <head>
@@ -500,7 +579,7 @@ window.addEventListener('load', function() {
 
 <!-- Add scripts/style for Lightbox2 -->
 <!-- <script src="/assets/js/lightbox-plus-jquery.js"></script>
-<link rel="stylesheet" href="/assets/css/lightbox.css"> -->
+<link rel="stylesheet" href="/assets/css/lightbox.css"> --> -->
 
 
 
@@ -522,7 +601,7 @@ window.addEventListener('load', function() {
                     <a href="">Latest Posts</a>
                     
                     
-                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+                    
                 </nav>
             </div>
         </footer>
@@ -553,7 +632,7 @@ window.addEventListener('load', function() {
     <!-- Paginator increased to "infinit" in _config.yml -->
     <!-- if paginator.posts  -->
     <!-- <script>
-        var maxPages = parseInt('');
+        var maxPages = parseInt('1');
     </script>
     <script src="assets/js/infinitescroll.js"></script> -->
     <!-- /endif -->
