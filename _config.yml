@@ -22,7 +22,7 @@ title: Drew Farrar
 email: drewmfarrar@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Composer | Guitarist | Educator
-baseurl: "/home" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.drewmfarrar.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  afarra6
 background-image: url('assets/DrewGuitar.png')
