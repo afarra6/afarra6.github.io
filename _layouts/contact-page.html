@@ -1,6 +1,6 @@
 ---
 layout: default
-current: page
+current: contact-page
 class: page-template
 disqus: false
 ---
@@ -39,7 +39,13 @@ into the {body} of the default.hbs template -->
             {% endif %}
 
             <section class="post-full-content" style="background-color:#e8dcb8">
-                {{ content }}
+                <div>
+                     {{ content }}
+                </div>
+                <div>
+                    {% include contact-form.html %}
+                </div>
+               
             </section>
 
         </article>
