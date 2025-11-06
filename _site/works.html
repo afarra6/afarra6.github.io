@@ -101,7 +101,18 @@
 
     <div class="site-wrapper">
         <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
-        <header class="site-header outer">
+        <head>
+    <link rel="stylesheet" href="assets/css/fadein.css">
+    <link rel="stylesheet" href="assets/css/tables.css">
+</head>
+
+
+<!-- < default -->
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
+
+<!-- The big featured header, it uses blog cover image as a BG if available -->
+<header class="site-header outer">
     <div class="inner">
         <nav class="site-nav">
     <div class="site-nav-left">
@@ -113,10 +124,11 @@
         
             <ul class="nav" role="menu">
     <!-- <li class="nav-home" role="menuitem"><a href="">Home</a></li> -->
-    <li class="nav-about" role="menuitem"><a href="./about.html">About</a></li>
-    <li class="nav-getting-started" role="menuitem"><a href="./works.html">Works</a></li>
-    <li class="nav-getting-started" role="menuitem"><a href="./blog.html">Writing</a></li>
-    <li class="nav-try-ghost" role="menuitem"><a href="./contact.html">Contact</a></li>
+    <li class="nav-about" role="menuitem"><a href="/about.html">About</a></li>
+    <li class="nav-getting-started" role="menuitem"><a href="/works.html">Works</a></li>
+    <li class="nav-try-ghost" role="menuitem"><a href="/blog.html">Writing</a></li>
+    <li class="nav-try-ghost" role="menuitem"><a href="/contact.html">Contact</a></li>
+
 </ul>
         
     </div>
@@ -132,17 +144,33 @@
     </div>
 </header>
 
-<head>
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
+<main id="site-main" class="site-main outer" role="main" style="background-color:#e8dcb8">
+    <div class="inner" style="background-color:#e8dcb8">
+
+        <article class="post-full   no-image" style="background-color:#e8dcb8">
+
+            <header class="post-full-header">
+                <!-- <h1 class="post-full-title">Works</h1> -->
+            </header>
+
+            
+
+            <section class="post-full-content" style="background-color:#e8dcb8; overflow:visible; width:100vw">
+                <head>
 <link rel="stylesheet" href="assets/css/tables.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.1.0/tablesort.min.js"></script>
 </head>
-<div class="table-container">
 
-<button class="start-button" id="chamber-button" style="border:none, background:#fbe19bff" onclick="displayTableNew(0);"><u>Chamber</u></button> | <button id="solo-button" style="border:none" onclick="displayTableNew(1);"><u>Solo/Duo</u></button> | <button id="large-button" style="border:none" onclick="displayTableNew(2);"><u>Large Ensemble</u></button> | <button id="install-button" style="border:none" onclick="displayTableNew(3);"><u>Installations</u></button> | <button id="elec-button" style="border:none" onclick="displayTableNew(4);"><u>With Electronics</u></button>
+<div class="table-container" style="width:200%; position:relative; left:-10vw">
+
+<button class="start-button" id="chamber-button" style="border:none, background-color:#fbe19bff" onclick="displayTableNew(0);"><u>Chamber</u></button> | <button id="solo-button" style="border:none" onclick="displayTableNew(1);"><u>Solo/Duo</u></button> | <button id="large-button" style="border:none" onclick="displayTableNew(2);"><u>Large Ensemble</u></button> | <button id="install-button" style="border:none" onclick="displayTableNew(3);"><u>Installations</u></button> | <button id="elec-button" style="border:none" onclick="displayTableNew(4);"><u>With Electronics</u></button>
 
 
 
-<table id="chamber" style="display:block, overflow:hidden">
+<table id="chamber" style="display:block;">
   
     
     <tr data-sort-method="none">
@@ -206,10 +234,58 @@
     </td></tr>
 
   
+    
+
+    <tr class="row1">
+<td class="col1">
+      winter petals
+    </td><td class="col2">
+      brass quintet
+    </td><td class="col3">
+      5'
+    </td><td class="col4">
+      2022
+    </td><td class="col5">
+      
+    </td></tr>
+
+  
+    
+
+    <tr class="row1">
+<td class="col1">
+      Mask piece
+    </td><td class="col2">
+      flute, alto saxophone, french horn, violin, and classical guitar
+    </td><td class="col3">
+      7'
+    </td><td class="col4">
+      2021
+    </td><td class="col5">
+      
+    </td></tr>
+
+  
+    
+
+    <tr class="row1">
+<td class="col1">
+      I listen with my hands
+    </td><td class="col2">
+      flute, clarinet, baritone saxophone, percussion, violin, viola, cello, and conductor
+    </td><td class="col3">
+      8'
+    </td><td class="col4">
+      2019
+    </td><td class="col5">
+      <a href="listen-with-hands" target="_blank">video</a>
+    </td></tr>
+
+  
 </table>
 
 
-<table id="solo" style="display:none">
+<table id="solo" style="display:none;">
   
     
     <tr data-sort-method="none">
@@ -261,10 +337,10 @@
 
 
 
-<table id="large" style="display:none">
+<table id="large" style="display:none;">
   
     
-    <tr data-sort-method="none">
+    <tr data-sort-method="none" sytle="background-cloor:#fbe19bff">
       
         <th>Title</th>
       
@@ -296,7 +372,7 @@
 </table>
 
 
-<table id="install" style="display:none">
+<table id="install" style="display:none;">
   
     
     <tr data-sort-method="none">
@@ -330,7 +406,7 @@
   
 </table>
 
-<table id="elec" style="display:none">
+<table id="elec" style="display:none;">
   
     
     <tr data-sort-method="none">
@@ -396,6 +472,7 @@
   
 </table>
 
+
 </div>
 
 <script>
@@ -445,6 +522,24 @@ function displayTableNew(tableIndex) {
     new Tablesort(document.getElementById('large'));
     new Tablesort(document.getElementById('elec'));
     new Tablesort(document.getElementById('install'));
+</script>
+
+
+            </section>
+
+        </article>
+
+    </div>
+</main>
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+<script>
+$(function() {
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+});
 </script>
 
 

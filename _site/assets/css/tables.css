@@ -3,8 +3,14 @@
     margin-left: auto;
     margin-right: auto;
     border-collapse: collapse;
+    table-layout: fixed;
+    width: 666px;
+    /* width: 100vw; */
   }
-  
+  tbody {
+    width: 100%;
+  }
+
   th, td {
     padding: 0.25em;
     text-align: left;
@@ -52,16 +58,17 @@
   tr { 
   border: solid;
   border-width: 1px 0;
+  background-color: #fbfbfb;
 }
 /* tr:first-child {
   border-top: none;
 }
    */
   .table-container {
-    max-width: 100%;
+    /* max-width: 100%; */
     overflow-x: auto;
     margin: auto;
-    width: 50%;
+    /* width: 100vw; */
   }
 
   button {
