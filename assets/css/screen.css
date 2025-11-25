@@ -185,9 +185,12 @@ body {
 @media (max-width: 500px) {
     .site-title {
         font-size: 3rem;
+        margin-top: 30%;
+        margin-left: 30%;
     }
     .site-description {
         font-size: 1.8rem;
+        margin-left: 30%;
     }
 }
 
