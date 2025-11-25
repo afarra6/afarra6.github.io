@@ -3,6 +3,7 @@ layout: page
 current: about
 title: About
 navigation: true
+cover: assets/images/About-Headshot.jpg
 logo: 
 class: page-template
 subclass: 'post page'
