@@ -1,4 +1,4 @@
-<!-- ---
+---
 layout: page
 current: godosc
 # title: About
@@ -9,7 +9,7 @@ class: post-template
 subclass: 'post page'
 # header:
 #     overlay_image: assets/DrewGuitar.png 
---- -->
+---
 
 # What is GodOSC?
 
