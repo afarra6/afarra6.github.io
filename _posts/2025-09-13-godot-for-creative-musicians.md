@@ -13,7 +13,7 @@ author: ghost
 
 Writing about how to use Godot for installations, OSC controllers, and other things.
 
-For a written tutorial on GodOSC [follow this link](godot_writing/godosc.md)!
+For a written tutorial on GodOSC <a href='godosc'>follow this link</a>
 
 
 
