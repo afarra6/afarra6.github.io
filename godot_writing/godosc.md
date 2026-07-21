@@ -7,6 +7,7 @@ navigation: true
 logo: 
 class: post-template
 subclass: 'post page'
+permalink: godosc
 # header:
 #     overlay_image: assets/DrewGuitar.png 
 ---
