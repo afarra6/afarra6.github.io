@@ -13,5 +13,10 @@ author: ghost
 
 Writing about how to use Godot for installations, OSC controllers, and other things.
 
+For a written tutorial on GodOSC [follow this link](godot_writing/godosc.md)!
+
+
+
+
 * [godOSC](https://github.com/afarra6/godOSC)
 * [MultiTouchGUI](https://github.com/afarra6/godot-multi-touch-gui)
