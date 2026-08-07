@@ -1,2 +1,0 @@
-@keyframes fadeInUp{0%{opacity:0;transform:translateY(10%)}to{opacity:1;transform:translateY(0)}}@keyframes fadeInRight{0%{opacity:0;transform:translateX(10%)}to{opacity:1;transform:translateX(0)}}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}.fadeInUp-animation{animation:fadeInUp 1.5s}.fadeInRight-animation{animation:fadeInRight 1.5s}img{animation-duration:1.5s;animation-name:fadeInRight}footer,h3{animation-name:fadeInUp}footer,h3,nav{animation-duration:1.5s}nav{animation-name:fadeIn}.slideshow{left:-50%}
-/*# sourceMappingURL=fadein.css.map */
