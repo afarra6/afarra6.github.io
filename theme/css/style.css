@@ -49,9 +49,27 @@ video {
     vertical-align: baseline
 }
 
+audio{
+    border-radius: 2px
+}
+
 audio:not([controls]) {
     display: none;
     height: 0
+}
+
+audio::-webkit-media-controls-panel{
+    background-color: var(--accent-color-blue);
+    border-radius: 0px
+}
+
+audio::-webkit-media-controls-enclosure {
+  border-radius: 8px; /* Adjust or set to 0 for sharp corners */
+}
+
+audio::-webkit-media-controls-play-button{
+    background-color: var(--accent-color-yellow);
+    border-radius: 8px
 }
 
 [hidden],
